@@ -1,0 +1,1 @@
+// events happen in two phases: bubbling phase and capturing phase

@@ -7,43 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        .some-element {
+            height: 100px;
+            width: 100px;
+            border: 2px solid #f00;
+        }
     </style>
 </head>
 
 <body>
     <script>
 
-        // check if bottom of page is visible, use it to adjust some css once the user reaches the bottom of the page
 
-        const bottomVisible = () =>
-            document.documentElement.clientHeight + window.scrollY >=
-            (document.documentElement.scrollHeight || document.documentElement.clientHeight);
 
-        bottomVisible() //true or false
-
-        // defer function calls, use it to delay the execution of a function until after the current call stack is empty
-
-        const addFive = (item) => console.log(item + 5);
-
-        const deferFunction = (fn, ...args) => setTimeout(fn, 1, ...args);
-        deferFunction(addFive, 25);
-
-        console.log(1);
-        console.log(2);
-
-        // get initials from name
-
-        const user = 'Robin van Persie';
-
-        const getInitials = (string = '') =>
-            string
-                .split(' ')
-                .map(([firstLetter]) => firstLetter)
-                .filter((_, index, array) => index === 0 || index === array.length - 1)
-                .join('').toUpperCase()
-
-        console.log(getInitials(user))
 
     </script>
 </body>

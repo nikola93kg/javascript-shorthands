@@ -1,0 +1,23 @@
+Upload anything, from anywhere
+https://pqina.nl/filepond/
+
+Croppie is a fast, easy to use image cropping plugin with tons of configuration options!
+https://foliotek.github.io/Croppie/
+
+Scroll Reveal
+https://scrollrevealjs.org/
+
+Glide.js
+https://glidejs.com/
+
+Luge - Front-end animation plugin for uncreative developers
+https://luge.cool/
+
+Modern & Interactive Open-source Charts
+https://apexcharts.com/
+
+Draggable
+https://shopify.github.io/draggable/
+
+Progress Bar
+https://kimmobrunfeldt.github.io/progressbar.js/

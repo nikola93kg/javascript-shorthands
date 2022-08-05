@@ -56,3 +56,15 @@ function runEvent(e) {
     // change bg color taking the coordinates as values of rgb
     document.body.style.backgroundColor = `rgb(${e.offsetX}, 180, ${e.offsetY})`
 }
+
+// generate random string id
+
+const uniqueId = crypto.randomUUID();
+
+console.log(uniqueId);
+
+// generate random pass
+
+const random = Math.random();
+const alphanumeric = random.toString(36);
+const randomPass = alphanumeric.slice(2);

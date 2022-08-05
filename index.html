@@ -7,24 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .some-element {
-            height: 100px;
-            width: 100px;
-            border: 2px solid #f00;
-        }
+
     </style>
 </head>
 
 <body>
     <script>
 
-        const generateRandomHexColor = () => {
-            return `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
+        const userData = {
+            name: 'John',
+            email: 'john@doe.com',
+            superSecretKey: 'PEKMEZNALEB',
         }
 
-        console.log(generateRandomHexColor())
+        const { superSecretKey, ...secureData } = userData;
 
-
+        console.log(secureData);
 
     </script>
 </body>

@@ -55,3 +55,38 @@ console.log(carName);
 const nestedArray = [1, [7, 5], [3, 2, 0], 'kobas'];
 const [first, [second, third], fourth, kobas] = nestedArray;
 console.log(kobas);
+
+// destructure function
+
+const activity = { name: "Workout", duration: 45 }
+
+const getDuration = ({ duration }) => {
+    console.log(duration);
+}
+
+getDuration(activity)
+
+// nested destructuring function
+
+const activities = {
+    types: {
+        short: 30,
+        long: 60,
+    },
+}
+
+const { types: { short } } = activities;
+console.log(activities) // 30
+
+
+// removing object properties
+
+const userData = {
+    name: 'John',
+    email: 'john@doe.com',
+    superSecretKey: 'PEKMEZNALEB',
+}
+
+const { superSecretKey, ...secureData } = userData;
+
+console.log(secureData);

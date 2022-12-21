@@ -63,6 +63,11 @@ let arr2 = [1, 4, 5, 6, 3, 4];
 
 console.log(arr2.length > 0);
 
+// check if an array is empty, part 2
+
+const emptyArr = [];
+const flag = Array.isArray(emptyArr) && !emptyArr.length; // flag => true
+
 // reverse a string
 
 const stringReverse = str => str.split('').reverse().join('');

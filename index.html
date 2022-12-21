@@ -14,15 +14,9 @@
 <body>
     <script>
 
-        const userData = {
-            name: 'John',
-            email: 'john@doe.com',
-            superSecretKey: 'PEKMEZNALEB',
-        }
-
-        const { superSecretKey, ...secureData } = userData;
-
-        console.log(secureData);
+let d = new Date();
+let now = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+console.log(now)
 
     </script>
 </body>

@@ -68,3 +68,21 @@ console.log(uniqueId);
 const random = Math.random();
 const alphanumeric = random.toString(36);
 const randomPass = alphanumeric.slice(2);
+
+// select a random element 
+
+let fruits = ["Apple", "Bannana", "Mango", "Orange"];
+let index = Math.floor(Math.random() * fruits.length);
+console.log(fruits[index]);
+
+// get current time
+
+let d = new Date();
+let now = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+console.log(now)
+
+// get current url
+
+const currentUrl = () => window.location.href;
+
+currentUrl();
